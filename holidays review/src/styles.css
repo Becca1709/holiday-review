@@ -1,0 +1,453 @@
+:root {
+  --db-bttn: #8989fa;
+}
+
+body {
+  background: white;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  border-radius: 1em;
+}
+
+.CC {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+  color: rgb(12, 5, 107);
+  background-color: rgba(242, 215, 8, 0);
+  padding: 20px;
+  width: fit-content;
+  border-radius: 32px;
+  border: solid;
+  border-color: darkblue;
+  margin: 1em;
+}
+
+.logo img {
+  width: fit-content;
+  max-height: 80px;
+  min-height: 50px;
+  margin-left: 1em;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.items li {
+  list-style: none;
+  text-decoration: none;
+  margin: 20px;
+  gap: 20px;
+  list-style: none;
+  justify-self: end;
+}
+
+/* HOME css*/
+
+.main-pic {
+  align-items: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-pic-img {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.main-pic-img img {
+  max-width: 600px;
+  border-radius: 32px;
+}
+.main-pic h1 {
+  font-weight: 700;
+}
+
+.main-pic p {
+  font-weight: 500;
+}
+
+.main-pic #wlcm-msg {
+  border-radius: 8px;
+  align-items: center;
+  justify-items: center;
+  padding: 2em;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-pic #action {
+  color: #2660e9;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  padding: 0.5em 1.5em;
+  width: 100%;
+  justify-self: center;
+  justify-content: center;
+}
+
+.main .main-img {
+  margin: 1em;
+  width: 500px;
+  background-color: whitesmoke;
+  padding: 1em;
+  color: black;
+  font-family: monospace;
+  border-radius: 8px;
+}
+
+.main .carousel {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* Texto a la izq */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 1em;
+  font-weight: 600;
+  text-align: center;
+  padding: 1em;
+  width: 600px;
+}
+.text li {
+  text-align: left;
+  list-style: none;
+}
+.text h2 {
+  background-color: #8989fa;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
+.logo-end {
+  width: fit-content;
+  justify-self: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* Log In page*/
+.login-cont {
+  min-height: 100dvh;
+}
+.login-cont h1 {
+  text-align: center;
+  font-weight: 700;
+  background-color: #f79c26;
+  width: 200px;
+  padding: 0.5em;
+  justify-self: center;
+  border-radius: 8px;
+  color: white;
+}
+
+.logIn {
+  margin-top: 50px;
+  width: 300px;
+  justify-self: center;
+}
+
+/*form in dashboard*/
+.form {
+  background-color: #8989fa;
+  border-radius: 8px;
+  padding: 1em;
+  width: 600px;
+  margin-top: 1em;
+  justify-self: center;
+  justify-content: center;
+  font-family: monospace;
+}
+.form button {
+  margin: 20px;
+}
+
+/*Dashboard css*/
+.Dashboard-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.user-menu {
+  background-color: #f79c26;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-menu p {
+  font-size: larger;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.cr-bttn {
+  text-align: center;
+  font-weight: 500;
+  background-color: #8989fa;
+  width: 200px;
+  height: fit-content;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+.cr-bttn:hover {
+  background-color: #6969c4;
+}
+.album-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+  font-family: monospace;
+}
+
+.album-cards {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 1em;
+  width: 600px;
+  margin-top: 1em;
+}
+
+/*albums fullscreen css*/
+.popup-fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Optional dark background backdrop */
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-fullscreen-content {
+  background: white;
+  width: auto;
+  padding: 20px;
+  height: 90vh;
+}
+.album-cards-fs .container {
+  height: 90vh;
+}
+.album-cards-fs .container .carousel {
+  height: 80%;
+}
+
+.dash-text {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  justify-self: right;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 0em 1em;
+  align-content: center;
+  justify-content: space-around;
+}
+.dt-right {
+  justify-self: right;
+  margin-left: 0.5em;
+}
+
+.fs-left {
+  justify-self: left;
+}
+#db-bttn:hover {
+  background-color: #f79c26;
+}
+
+.dt-right:hover,
+.fs-left:hover {
+  font-size: larger;
+  color: black;
+}
+
+/* --- Mobile Phones (Portrait) --- */
+@media screen and (max-width: 480px) {
+  /* Styles for small phones go here */
+  .CC {
+    display: flex;
+    flex-direction: column;
+  }
+  .main,
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    justify-self: center;
+  }
+  .main-pic-img {
+    display: none;
+  }
+  .main-img {
+    margin: 1em;
+    max-width: 370px;
+    background-color: whitesmoke;
+  }
+  .user-menu {
+    background-color: #f79c26;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cr-bttn {
+    width: 100vw;
+  }
+  .form {
+    width: 100vw;
+  }
+}
+
+/* --- Mobile Phones (Landscape) --- */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* Styles for wider or rotated phones go here */
+
+  .CC {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+  }
+  .header {
+    width: 100vw;
+  }
+  .main-pic {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-pic-img img {
+    max-width: 400px;
+  }
+
+  .text {
+    min-width: 600px;
+  }
+
+  .main,
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    justify-self: center;
+  }
+  .main .main-img {
+    margin: 1em;
+    max-width: 500px;
+  }
+  .main-pic {
+    min-width: 800px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+  }
+  .user-display {
+    align-self: center;
+  }
+  .user-menu {
+    background-color: #f79c26;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cr-bttn {
+    width: 100vw;
+  }
+  .form {
+    width: 100vw;
+  }
+}
+
+/* --- iPads & Tablets (Portrait) --- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .CC {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+  }
+
+  .main-pic {
+    min-width: 800px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+  }
+  #wlcm-msg {
+    max-width: 300px;
+  }
+  .main-pic-img img {
+    max-width: 400px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .user-menu {
+    background-color: #f79c26;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .cr-bttn {
+    width: 100vw;
+  }
+  .form {
+    width: 80vw;
+  }
+
+  /* Styles for standard iPads go here */
+}
+
+/* --- iPads & Tablets (Landscape) --- */
+@media screen and (min-width: 1025px) {
+  /* Styles for iPad Pro and laptops go here */
+}
