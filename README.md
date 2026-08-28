@@ -1,6 +1,6 @@
-# Project Title
+# Holidays Review
 
-Holidays review. Organise your photos into simple albums. create, delete, save, update them as necessary.
+Organise your photos into simple albums. create, delete, save, update them as necessary.
 
 ## 🚀 Features
 
